@@ -70,4 +70,4 @@ https://en.wikipedia.org/wiki/Template_(file_format)
 19. open "styles" folder and configure the "style.css" file source on "index.html";
 20. create a new GitHub repository;
 21. initiate the new repository and push the files ("git init", "git add .", "git commit -m "..."", git remote add origin "...", "git push origin master);
-22. type "npm run deploy".
+22. type "npm run deploy" (if ran OK, the last line will be "Published").
