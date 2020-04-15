@@ -1,8 +1,4 @@
-body {
-    background-color: lightpink;
-    margin-left:             30px;
-  }
-  
-  h1 {
-    font-size:               5rem;
-  }
+@import "var";
+@import "function";
+@import "body/first-box";
+@import "menu/menu-box";
