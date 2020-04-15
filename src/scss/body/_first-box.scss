@@ -22,98 +22,98 @@
 
 // Home (index.html), 20200415.html, 20200416.html, ...
 .head-pages {
-    margin-right:                            30px;
-    display:                                 flex;
+    margin-right:                              30px;
+    display:                                   flex;
     div {
-        padding:                              5px;
-        border:                 1px solid black;
-        background-color:             $my-color-1;
-        border-radius:                        5px;
-        margin:                               2px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight:                         bold;
-        font-size:                           18px;
-        width:             $button-nav-size-width;
-        text-align:                        center;
+        padding:                                5px;
+        border:                   1px solid black;
+        background-color:               $my-color-1;
+        border-radius:                          5px;
+        margin:                                 2px;
+        font-family:   Arial, Helvetica, sans-serif;
+        font-weight:                           bold;
+        font-size:                             18px;
+        width:               $button-nav-size-width;
+        text-align:                          center;
     }
     a {
-        text-decoration:              transparent;
+        text-decoration:                transparent;
     }
 }
 
 // Home (index.html), 20200415.html, 20200416.html, ...
 body {
-    margin-left:                             30px;
-    background-color:                 lightpink;
+    margin-left:                               30px;
+    background-color:                   lightpink;
     a {
-        text-decoration:              transparent;
+        text-decoration:                transparent;
     }
     p {
-        text-align:                       justify;
-        margin-right:                       300px;
+        text-align:                         justify;
+        margin-right:                         300px;
     }
     h3 {
-        font-size:                           28px;
+        font-size:                             28px;
     }
     span {
-        background-color:             $my-color-1;
-        padding:                              5px;
-        border-radius:                        5px;
+        background-color:               $my-color-1;
+        padding:                                5px;
+        border-radius:                          5px;
     }
 }
 
 // Home (index.html)
 .h1-home {
-    font-size:                               5rem;
+    font-size:                                 5rem;
 }
 
 // 20200415.html, 20200416.html, ...
 .span-date {
-    padding:                                 10px;
-    background-color:        rgb(240, 155, 240);
-    border-radius:                            5px;
-    margin:                                   2px;
-    font-family:     Arial, Helvetica, sans-serif;
-    font-weight:                             bold;
-    font-size:                               18px;
-    color:                        rebeccapurple;
+    padding:                                   10px;
+    background-color:          rgb(240, 155, 240);
+    border-radius:                              5px;
+    margin:                                     2px;
+    font-family:       Arial, Helvetica, sans-serif;
+    font-weight:                               bold;
+    font-size:                                 18px;
+    color:                          rebeccapurple;
 }
 
 // 20200415.html
 .solution {
-    display:                  flex;
-    padding:                  10px;
-    width:                     50%;
-    justify-content:        center;
-    background-color:      white;
+    display:                                   flex;
+    padding:                                   10px;
+    width:                     $solution-background;
+    justify-content:                         center;
+    background-color:                       white;
     .solution-color {
-        border: 2px solid purple;
-        margin:                5px;
+        border:                  2px solid purple;
+        margin:                                 5px;
     }
     .solution-color-desc {
         div{
-            padding:           5px;
-            font-size:        16px;
+            padding:                            5px;
+            font-size:                         16px;
         }
     }
     .solution-color-background-1 {
-        background-color: color(1);
-        width:                60px;
-        padding:              50px;
+        background-color:                  color(1);
+        width:     $solution-color-background-width;
+        padding: $solution-color-background-padding;
     }
     .solution-color-background-2 {
-        background-color: color(2);
-        width:                60px;
-        padding:              50px;
+        background-color:                  color(2);
+        width:     $solution-color-background-width;
+        padding: $solution-color-background-padding;
     }
     .solution-color-background-3 {
-        background-color: color(3);
-        width:                60px;
-        padding:              50px;
+        background-color:                  color(3);
+        width:     $solution-color-background-width;
+        padding: $solution-color-background-padding;
     }
     .solution-color-background-4 {
-        background-color: color(4);
-        width:                60px;
-        padding:              50px;
+        background-color:                  color(4);
+        width:     $solution-color-background-width;
+        padding: $solution-color-background-padding;
     }
 }

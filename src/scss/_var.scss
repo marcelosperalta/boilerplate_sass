@@ -11,8 +11,8 @@
 // Color Converter
 // https://www.w3schools.com/colors/colors_converter.asp
 
-$my-color-1:               violet;
-$button-nav-size-width:        90px;
+$my-color-1:                            violet;
+$button-nav-size-width:                     90px;
 
 $colors: (
   1: red,
@@ -24,3 +24,8 @@ $colors: (
   7: orange,
   8: purple,
 );
+
+$times:                                       1;
+$solution-background:              $times * 50%;
+$solution-color-background-width: $times * 60px;
+$solution-color-background-padding:        50px;
