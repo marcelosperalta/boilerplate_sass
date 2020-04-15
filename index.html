@@ -16,63 +16,83 @@
 
 <style>
     a {
-        text-decoration:   transparent;
+        text-decoration:              transparent;
     }
     .background {
-        background-color: blueviolet;
-        width:                   500px;
-        padding:                  15px;
-        color:                 white;
-        font-weight:              bold;
-        border-radius:             5px;
+        background-color:            blueviolet;
+        width:                              700px;
+        padding:                             15px;
+        color:                            white;
+        font-weight:                         bold;
+        border-radius:                        5px;
     }
     h3 {
         font-size: 28px;
     }
     span {
-        background-color:     violet;
-        padding:                   5px;
-        border-radius:             5px;
+        background-color:                violet;
+        padding:                              5px;
+        border-radius:                        5px;
     }
     p {
-        text-align:            justify;
-        margin-right:            300px;
+        text-align:                       justify;
+        margin-right:                       300px;
+    }
+    .span2 {
+        background-color:                violet;
+        padding:                              5px;
+        border-radius:                        5px;
+        height:                              12px;
+        font-size:                           12px;
+        vertical-align:                    middle;
+        font-family: Arial, Helvetica, sans-serif;
     }
 </style>
 
 <body>
 
-    <h1 id="Home">Project Template</h1>
+    <h1 id="Home">
+        Project Template
+    </h1>
     
-    <h2>An HTML and CSS <a href="https://en.wikipedia.org/wiki/Boilerplate_code" target="_blank"><b>boilerplate code</b></a> 
-        with built-in <a href="https://sass-lang.com/" target="_blank"><b>Sass</b></a> support</h2>
+    <h2>
+        An HTML and CSS 
+        <a href="https://en.wikipedia.org/wiki/Boilerplate_code" target="_blank"><b>boilerplate code</b></a> 
+        with built-in <a href="https://sass-lang.com/" target="_blank"><b>Sass</b></a> support
+    </h2>
 
     <br>
 
     <h3>Get Started</h3>
 
-    <a href="#Setup">Setup</a>
+    <a href="#Setup"><b>Setup</b></a>
     <br>
     <br>
-    <a href="#Useful_Commands">Useful Commands</a>
+    <a href="#Useful_Commands"><b>Useful Commands</b></a>
     <br>
     <br>
-    <a href="#Project_Structure">Project Structure</a>
+    <a href="#Project_Structure"><b>Project Structure</b></a>
+
+    <br>
+    <br>
 
     <!-- Setup -->
-    <h3 id="Setup">Setup</h3>
+    <h3 id="Setup">
+        Setup 
+        <span class="span2"><a href="#Home"><b>HOME</b></a></span>
+    </h3>
 
     <ol>
 
-        <!-- 1 -->
+        <!-- 1. -->
         <li>create a folder for your project</li>
         <br>
 
-        <!-- 2 -->
+        <!-- 2. -->
         <li>create <a href="https://daringfireball.net/projects/markdown/" target="_blank"><b>README.md</b></a> file</li>
         <br>
 
-        <!-- 3 -->
+        <!-- 3. -->
         <li>run on <a href="https://en.wikipedia.org/wiki/Terminal_emulator" target="_blank"><b>Terminal</b></a>
             <br>
             <br>
@@ -84,9 +104,12 @@
         </li>
         <br>
 
-<!-- 4 -->
-<li>edit <code><b>package.json</b></code> file to add your project's name
+<!-- 4. -->
+<li>edit <code><b>package.json</b></code> file
 <br>
+<br>
+<!-- 4.1. -->
+<ol>4.1. add your project's name:</ol>
 <br>
 <div class="background">
 <pre>
@@ -97,10 +120,91 @@
 }
 </pre>
 </div>
+<br>
+<!-- 4.2. -->
+<ol>4.2. remove this line (inside "scripts"):</ol>
+<br>
+<div class="background">
+<pre>
+{
+    ...
+    "test": "echo \"Error: no test specified\" && exit 1"
+    ...
+}
+</pre>
+</div>
+<br>
+<!-- 4.3. -->
+<ol>4.3. add these lines inside "scripts":</ol>
+<br>
+<div class="background">
+<pre>
+{
+    "start": "run-p watch watch:styles",
+    "build": "run-s clean clean:styles build:styles copy",
+    "deploy": "run-s build publish",
+    "build:styles": "sass src/scss:src/styles",
+    "watch": "live-server src",
+    "watch:styles": "sass src/scss:src/styles --watch",
+    "clean": "rm -rf dist",
+    "clean:styles": "rm -rf src/styles",
+    "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
+    "publish": "gh-pages -d dist"
+}
+</pre>
+</div>
+<br>
+<!-- 4.4. -->
+<ol>4.4. add these lines below ""license": "ISC"":</ol>
+<br>
+<div class="background">
+<pre>
+"devDependencies": {
+    "gh-pages": "^2.1.1",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.23.0-module.beta.1"
+}
+</pre>
+</div>
+<br>
+<!-- final -->
+<ol>after the previous steps, your <code><b>package.json</b></code> will looks like this:</ol>
+<br>
+<div class="background">
+<pre>
+{
+  "name": "Template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p watch watch:styles",
+    "build": "run-s clean clean:styles build:styles copy",
+    "deploy": "run-s build publish",
+    "build:styles": "sass src/scss:src/styles",
+    "watch": "live-server src",
+    "watch:styles": "sass src/scss:src/styles --watch",
+    "clean": "rm -rf dist",
+    "clean:styles": "rm -rf src/styles",
+    "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
+    "publish": "gh-pages -d dist"
+  },
+  "author": "Marcelo Peralta",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.23.0-module.beta.1"
+  }
+}
+</pre>
+</div>
 </li>
 <br>
 
-        <!-- 5 -->
+        <!-- 5. -->
         <li>create <a href="https://git-scm.com/docs/gitignore" target="_black"><b>.gitignore</b></a> file and skip this folders
             <br>
             <br>
@@ -116,11 +220,11 @@
         </li>
         <br>
 
-        <!-- 6 -->
+        <!-- 6. -->
         <li>create a <b>scr</b> folder</li>
         <br>
 
-        <!-- 7 -->
+        <!-- 7. -->
         <li>create the folders below inside <b>scr</b> folder
             <br>
             <br>
@@ -137,11 +241,11 @@
         </li>
         <br>
 
-        <!-- 8 -->
+        <!-- 8. -->
         <li>create a <b>index.html</b> inside <b>scr</b> folder</li>
         <br>
 
-<!-- 9 -->
+<!-- 9. -->
 <li>edit the <b>index.html</b> file (./scr/index.html) to add your project's name
 <br>
 <br>
@@ -158,7 +262,7 @@
 </li>
 <br>
 
-        <!-- 10 -->
+        <!-- 10. -->
         <li>start a new git repository and make an initial commit. this will make sure that you can work on your project with git
             <br>
             <br>
@@ -173,7 +277,7 @@
         </li>
         <br>
 
-        <!-- 11 -->
+        <!-- 11. -->
         <li>install the <code><b>package.json</b></code> dependencies
             <br>
             <br>
@@ -185,8 +289,13 @@
 
     </ol>
 
+    <br>
+
     <!-- Useful Commands -->
-    <h3 id="Useful_Commands">Useful Commands</h3>
+    <h3 id="Useful_Commands">
+        Useful Commands 
+        <span class="span2"><a href="#Home"><b>HOME</b></a></span>
+    </h3>
 
     <h4>Development</h4>
 
@@ -227,8 +336,14 @@
     </div>
     </ol>
 
+    <br>
+    <br>
+
     <!-- Project Structure -->
-    <h3 id="Project_Structure">Project Structure</h3>
+    <h3 id="Project_Structure">
+        Project Structure 
+        <span class="span2"><a href="#Home"><b>HOME</b></a></span>
+    </h3>
 
     <p>Any project created with this boilerplate will follow the structure below:</p>
 
@@ -325,7 +440,7 @@ Project
     <br>
 
     <footer>
-        <span><a href="#Home"><b>Home</b></a></span>
+        <span><a href="#Home"><b>HOME</b></a></span>
         <span><a href="#Setup"><b>Setup</b></a></span>
         <span><a href="#Useful_Commands"><b>Useful Commands</b></a></span>
         <span><a href="#Project_Structure"><b>Project Structure</b></a></span>
