@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,10 +14,8 @@
 
 </head>
 
+<!-- only for didactic objective (is better to use CSS/Sass) -->
 <style>
-    a {
-        text-decoration:              transparent;
-    }
     .background {
         background-color:            blueviolet;
         width:                              700px;
@@ -25,18 +23,6 @@
         color:                            white;
         font-weight:                         bold;
         border-radius:                        5px;
-    }
-    h3 {
-        font-size: 28px;
-    }
-    span {
-        background-color:                violet;
-        padding:                              5px;
-        border-radius:                        5px;
-    }
-    p {
-        text-align:                       justify;
-        margin-right:                       300px;
     }
     .span2 {
         background-color:                violet;
@@ -49,9 +35,20 @@
     }
 </style>
 
-<body>
+<!-- ** to fix ".nav-bar" ** -->
+<!-- <div class="nav-bar"> -->
+    <head>
+        <div class="head-pages">
+            <div id="Home"><a href="#">HOME</a></div>
+            <div><a href="./html/20200415/20200415.html">15.04.2020</a></div>
+            <div><a href="./html/20200416/20200416.html">16.04.2020</a></div>
+        </div>
+    </head>
+<!-- </div> -->
 
-    <h1 id="Home">
+<body class="body-home">
+
+    <h1 class="h1-home">
         Project Template
     </h1>
     
