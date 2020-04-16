@@ -1,15 +1,12 @@
 // class 15.04.2020
-// $my-color: rgba(41, 61, 82, 0.541);
-// $box-size: 30px;
-// $box-color: pink;
-// $colors: (
-//   nice: red,
-//   cool: black,
-//   fun: #3333,
-// );
-
-// Color Converter
-// https://www.w3schools.com/colors/colors_converter.asp
+  // $my-color: rgba(41, 61, 82, 0.541);
+  // $colors: (
+  //   nice: red,
+  //   cool: black,
+  //   fun: #3333,
+  // );
+$box-size-15042020: 30px;
+$box-color-15042020: pink;
 
 $my-color-1:                            violet;
 $button-nav-size-width:                     90px;
@@ -26,8 +23,9 @@ $colors: (
 );
 
 $times:                                       1;
-$solution-background:              $times * 50%;
+$solution-background:              $times * 75%;
 $solution-color-background-width: $times * 60px;
 $solution-color-background-padding:        50px;
 
 // class 16.04.2020
+$my-color-16042020: red;

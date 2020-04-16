@@ -7,18 +7,11 @@
 //       background-color: $box-color;
 //     }
 // }
-
-// ** to fix ".nav-bar **
-// .nav-bar{
-//     position:                               fixed;
-//     z-index:                                 2020;
-//     top:                                      0px;
-//     padding-top:                             10px;
-//     width:                                   100%;
-//     transform:                      translateY(0);
-//     transition:               transform 0.3s ease;
-//     background-color:                 lightpink;
-// }
+#box-15042020 {
+ width: $box-size-15042020;
+ height: $box-size-15042020;
+ background-color: $box-color-15042020;
+}
 
 // Home (index.html), 20200415.html, 20200416.html, ...
 .head-pages {
@@ -60,6 +53,19 @@ body {
         padding:                                5px;
         border-radius:                          5px;
     }
+    .span2 {
+        background-color:                  violet;
+        padding:                                5px;
+        border-radius:                          5px;
+        height:                                12px;
+        font-size:                             12px;
+        vertical-align:                      middle;
+        font-family:   Arial, Helvetica, sans-serif;
+    }
+    .dci-link-repo {
+        font-size:                             12px;
+        // margin-right:                           5px;
+    }
 }
 
 // Home (index.html)
@@ -70,13 +76,20 @@ body {
 // 20200415.html, 20200416.html, ...
 .span-date {
     padding:                                   10px;
-    background-color:          rgb(240, 155, 240);
+    background-color:                       white;
     border-radius:                              5px;
     margin:                                     2px;
     font-family:       Arial, Helvetica, sans-serif;
     font-weight:                               bold;
     font-size:                                 18px;
     color:                          rebeccapurple;
+}
+.background-items {
+    background-color:                       white;
+    border-radius:                              5px;
+    padding-left:                              10px;
+    padding-bottom:                             5px;
+    width:                                      70%;
 }
 
 // 20200415.html
@@ -119,6 +132,20 @@ body {
 }
 
 
+
+
+//
+////
+//////
+////////
+//////////////
+// ON HOLD: //
+//////////////
+      ////////
+        //////
+          ////
+            //
+
 // .to-top {
     // text-decoration: none;
     // position: fixed;
@@ -150,4 +177,16 @@ body {
     // top: 0;
     // right: 10px;
     // clip: rect(1px,1px,1px,1px);
+// }
+
+// ** to fix ".nav-bar **
+// .nav-bar{
+//     position:                               fixed;
+//     z-index:                                 2020;
+//     top:                                      0px;
+//     padding-top:                             10px;
+//     width:                                   100%;
+//     transform:                      translateY(0);
+//     transition:               transform 0.3s ease;
+//     background-color:                 lightpink;
 // }

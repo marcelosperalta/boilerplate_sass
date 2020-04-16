@@ -1,10 +1,23 @@
+// class 16.04.2020
 @mixin flex-forever {
-    display:            flex;
-    justify-content:  center;
-    text-align:       center;
-    text-align:       center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 99%; // added to fit with my webpage 20200416.html
+  }
+// mixin with arguments
+@mixin font-setup($f-name, $f-size, $f-weight) {
+  font-family: $f-name;
+  font-size: $f-size;
+  font-weight: $f-weight;
 }
-
-.container {
-    @include flex-forever()
+.container-16042020 {
+  @include flex-forever;
+  background-color: pink;
+  @include font-setup(arial, 3rem, bold);
+}
+.text-center-16042020 {
+  @include flex-forever;
+  @include font-setup(arial, 9rem, normal);
 }
