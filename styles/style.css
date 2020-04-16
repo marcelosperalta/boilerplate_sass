@@ -1,3 +1,9 @@
+#box-15042020 {
+  width: 30px;
+  height: 30px;
+  background-color: pink;
+}
+
 .head-pages {
   margin-right: 30px;
   display: flex;
@@ -37,6 +43,18 @@ body span {
   padding: 5px;
   border-radius: 5px;
 }
+body .span2 {
+  background-color: violet;
+  padding: 5px;
+  border-radius: 5px;
+  height: 12px;
+  font-size: 12px;
+  vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .dci-link-repo {
+  font-size: 12px;
+}
 
 .h1-home {
   font-size: 5rem;
@@ -44,7 +62,7 @@ body span {
 
 .span-date {
   padding: 10px;
-  background-color: #f09bf0;
+  background-color: white;
   border-radius: 5px;
   margin: 2px;
   font-family: Arial, Helvetica, sans-serif;
@@ -53,10 +71,18 @@ body span {
   color: rebeccapurple;
 }
 
+.background-items {
+  background-color: white;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  width: 70%;
+}
+
 .solution {
   display: flex;
   padding: 10px;
-  width: 50%;
+  width: 75%;
   justify-content: center;
   background-color: white;
 }
@@ -87,6 +113,39 @@ body span {
   background-color: blue;
   width: 60px;
   padding: 50px;
+}
+
+.nav-15042020 li {
+  list-style: none;
+}
+.nav-15042020 a {
+  color: tomato;
+}
+.nav-15042020 a:hover {
+  background-color: black;
+}
+
+.container-16042020 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 99%;
+  background-color: pink;
+  font-family: arial;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.text-center-16042020 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 99%;
+  font-family: arial;
+  font-size: 9rem;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
