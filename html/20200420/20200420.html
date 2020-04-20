@@ -14,9 +14,16 @@
 
 <head>
     <div class="head-pages">
+        <div class="head-pages-transparent" id="Home"><a href="../../index.html"></a></div>
+        <div class="head-pages-transparent"><a href="..."></a></div>
+        <div class="head-pages-transparent"><a href="..."></a></div>
+        <div class="head-pages-current-page"><a href="../20200420/20200420.html">20.04.2020</a></div>
+    </div>
+    <div class="head-pages">
         <div id="Home"><a href="../../index.html">HOME</a></div>
         <div><a href="../20200415/20200415.html">15.04.2020</a></div>
         <div><a href="../20200416/20200416.html">16.04.2020</a></div>
+        <div class="head-pages-transparent"><a href="..."></a></div>
     </div>
 </head>
 
@@ -24,9 +31,7 @@
 
 <body>
 
-    <h5>
-        <span class="span-date"><b>> 20.04.2020</b></span>
-    </h5>
+    <!-- <h5><span class="span-date"><b>> 20.04.2020</b></span></h5> -->
 
     <div class="background-items">
         <h3>Summary</h3>
@@ -38,48 +43,73 @@
         <br>
         <br>
         <a href="#Exercise"><b>Exercise</b></a>
+        <br>
+        <br>
+        <a href="#Reading_time"><b>Reading time</b></a>
     </div>
 
     <div class="background-items">
         <h3 id="Topics">
             Topics
-            <span class="span2"><a href="#Home"><b>HOME</b></a></span>
+            <span class="span2"><a href="#"><b>HOME</b></a></span>
         </h3>
 
-        <a href="https://www.w3.org/TR/REC-DOM-Level-1/introduction.html" target="_blank"><b>What is the Document Object Model?</b></a>
+        <a href="https://en.wikipedia.org/wiki/JavaScript_engine" target="_blank"><b>JavaScript engine</b></a>
         <br>
         <br>
-        <a href="https://sass-lang.com/documentation/at-rules/mixin" target="_blank"><b></b></a>
+        <a href="https://developer.mozilla.org/de/docs/DOM" target="_blank"><b>DOM</b></a>
+        <br>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Basic_usage" target="_blank"><b>HTML &lt;script&gt; element (inline and external script)</b></a>
+        <br>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window" target="_blank"><b>Window interface</b></a>
+        <br>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects" target="_blank"><b>Native object (global object) and Host object</b></a>
     </div>
 
 
     <div class="background-items">
-
         <h3 id="Class">
             Class
+            <span class="span2"><a href="#"><b>HOME</b></a></span>
             <span class="span2">
-            <a 
-            class="dci-link-repo" 
-            href="https://github.com/FBw-26/live-coding/tree/master/apr/16-04" 
-            target="_blank">
-            DCI Class Repository
-            </span>
-            <!-- extra spaces before or after text -->
-            <!-- (non-breaking space) -->
-            &nbsp; 
-            </a>
-            <span class="span2">
-                <a href="#Home"><b>HOME</b></a>
+                <a 
+                class="dci-link-repo" 
+                href="https://github.com/FBw-26/live-coding/tree/master/apr/20-04" 
+                target="_blank">
+                DCI Class Repository
+                </a>
             </span>
         </h3>
 
-        <!-- DCI class 16.04.2020 -->
-        <h4>SASS Mixin</h4>
-        <div class="container-16042020">
-          Hi this is ME 😎
-        </div>
-        <div class="text-center-16042020">
-          Hola
+        <!-- DCI class 20.04.2020 -->
+        <h4>DOM</h4>
+        <div>
+        <script>
+            console.log(window);
+          </script>
+          <h1 id="default">Hey, welcome to my page</h1>
+          <p id="main">cool this is me 🤓</p>
+          <button onclick="change()">change</button>
+          <button onclick="reset()">reset</button>
+          <br>
+          <br>
+          <select name="number" id="num" class="selectedNum">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button onclick="multiply()">calculate</button>
+          <div class="result"></div>
         </div>
 
     </div>
@@ -87,25 +117,20 @@
     <div class="background-items">
         <h3 id="Exercise" class="h3-background">
             Exercise
-            <span class="span2"><a href="#Home"><b>HOME</b></a></span>
+            <span class="span2"><a href="#"><b>HOME</b></a></span>
         </h3>
-        <h4>...</h4>
+        <h4>The Guessing Game</h4>
         <h4>Instructions:</h4>
         <ol>
-            <li>...</li>
-            <li>...</li>
-            <br>
+            <a href="https://github.com/FBw-26/alert-prompt-marcelosperalta" target="_blank"> GitHub Classroom</a>
         </ol>
-        <ol>
-            <img src="..." alt="" width="600px">
-        </ol>
-
+        
         <h4>Solution:</h4>
-        <div>
+        <ol>
+            <a href="https://github.com/FBw-26/alert-prompt-marcelosperalta" target="_blank"> GitHub Repository</a>
+        </ol>
 
-            <div>
-                ...
-            </div>
+        <div>
 
             <div>
                 <h5>
@@ -129,8 +154,8 @@
                     References:
                     <br>
                     <br>
-                    <a href="https://www.w3schools.com/colors/colors_converter.asp" target="_blank">
-                        Color Converter
+                    <a href="..." target="_blank">
+                        ...
                     </a>
                 </h5>
             </div>
@@ -138,8 +163,31 @@
         </div>
     </div>
 
+    <div class="background-items">
+        <h3 id="Reading_time">
+            Reading time
+            <span class="span2"><a href="#"><b>HOME</b></a></span>
+        </h3>
+        <a href="https://www.w3.org/TR/REC-DOM-Level-1/introduction.html" target="_blank">
+            <b>What is the Document Object Model?</b>
+        </a>
+        <br>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document" target="_blank">
+            <b>Document</b>
+        </a>
+        <br>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById" target="_blank">
+            <b>Document.getElementById()</b>
+        </a>
+    </div>
+
     <br>
 
 </body>
+
+<!-- DCI class 20.04.2020 -->
+<script src="../../html/20200420/scripts.js"></script>
 
 </html>
