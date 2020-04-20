@@ -1,16 +1,16 @@
 // class 15.04.2020
 // body {
-//     background-color: color(cool);
+//     background-color:                color(cool);
 //     #box {
-//       width: $box-size;
-//       height: $box-size;
-//       background-color: $box-color;
+//       width:                           $box-size;
+//       height:                          $box-size;
+//       background-color:               $box-color;
 //     }
 // }
 #box-15042020 {
- width: $box-size-15042020;
- height: $box-size-15042020;
- background-color: $box-color-15042020;
+ width:                          $box-size-15042020;
+ height:                         $box-size-15042020;
+ background-color:              $box-color-15042020;
 }
 
 // Home (index.html), 20200415.html, 20200416.html, ...
@@ -64,7 +64,6 @@ body {
     }
     .dci-link-repo {
         font-size:                             12px;
-        // margin-right:                           5px;
     }
 }
 
@@ -131,6 +130,66 @@ body {
     }
 }
 
+// 20200416.html
+.solution-16042020 {
+    display:                                   flex;
+    justify-content:                         center;
+    .solution-color-column {
+        display:                               flex;
+        flex-direction:                         row;
+        justify-content:                     center;
+        padding:                               1rem;
+        height:                                5rem;
+        .solution-color-background-5 {
+            background-color:   rgb(214, 214, 67);
+            width: $solution-color-background-width;
+        }
+        .solution-color-background-6 {
+            background-color:              color(3);
+            width: $solution-color-background-width;
+        }
+        .solution-color-background-7 {
+            background-color:  rgb(243, 241, 119);
+            width: $solution-color-background-width;
+        }
+        .solution-color-background-8 {
+            background-color:             darkred;
+            width: $solution-color-background-width;
+        }
+        .solution-color-background-9 {
+            background-color:              color(1);
+            width: $solution-color-background-width;
+        }
+        .solution-color-background-10 {
+            background-color:  rgb(230, 119, 119);
+            width: $solution-color-background-width;
+        }
+        .solution-color-background-11 {
+            background-color:            darkblue;
+            width: $solution-color-background-width;
+        }
+        .solution-color-background-12 {
+            background-color:              color(4);
+            width: $solution-color-background-width;
+        }
+        .solution-color-background-13 {
+            background-color:           lightblue;
+            width: $solution-color-background-width;
+        }
+        .solution-color-background-14 {
+            background-color:      rgb(87, 2, 87);
+            width: $solution-color-background-width;
+        }
+        .solution-color-background-15 {
+            background-color:              color(8);
+            width: $solution-color-background-width;
+        }
+        .solution-color-background-16 {
+            background-color:   rgb(200, 99, 200);
+            width: $solution-color-background-width;
+        }
+    }
+}
 
 
 
