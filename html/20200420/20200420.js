@@ -66,3 +66,32 @@ const multiply = () => {
   }
   document.querySelector(".result").innerHTML = x;
 };
+
+// Exercise solution
+// document.getElementById('Guess').onclick = function getRandomInt(max) {
+//   let i = 0;
+//   let x = window.prompt("Guess a number between 1 and 10", "");
+//   let randomInt = Math.floor(Math.random() * Math.floor(max) + 1); // "+ 1" to avoid "0"
+//   // return Math.floor(Math.random() * Math.floor(max) + 1);
+//   if (x == randomInt) {
+//       return window.prompt("Acertou!");
+//     } else if (x != randomInt && i < 3) {
+//       i++;
+//       window.prompt("Errou!");
+//     } else if (x != randomInt && i <= 3) {
+//       return window.prompt("fim");
+//     }
+// }
+// getRandomInt(11); // expected output: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 or 10
+
+
+// function getRandomInt(max) {
+//   let x = 1;  // user input
+//   let randomInt = Math.floor(Math.random() * Math.floor(max) + 1); // "+ 1" to avoid "0"
+//   if (x == randomInt) {
+//       return console.log("acertou");
+//   } else if (x != randomInt) {
+//       console.log("errou");
+//   }
+// }
+// getRandomInt(11); // expected output: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 or 10
