@@ -67,31 +67,45 @@ const multiply = () => {
   document.querySelector(".result").innerHTML = x;
 };
 
-// Exercise solution
-// document.getElementById('Guess').onclick = function getRandomInt(max) {
-//   let i = 0;
-//   let x = window.prompt("Guess a number between 1 and 10", "");
-//   let randomInt = Math.floor(Math.random() * Math.floor(max) + 1); // "+ 1" to avoid "0"
-//   // return Math.floor(Math.random() * Math.floor(max) + 1);
-//   if (x == randomInt) {
-//       return window.prompt("Acertou!");
-//     } else if (x != randomInt && i < 3) {
-//       i++;
-//       window.prompt("Errou!");
-//     } else if (x != randomInt && i <= 3) {
-//       return window.prompt("fim");
-//     }
-// }
-// getRandomInt(11); // expected output: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 or 10
+// Exercise solution v1
+document.getElementById('Guess').onclick = function guess() {
+let max = 10;
+let randomNum = Math.floor(Math.random() * Math.floor(max) + 1);
+console.log(randomNum);
+let userInput = window.prompt("Guess a number between 1 and 10", ""); 
+let attempts = 1;
+    while (attempts < 3) {
+        if (userInput == randomNum) {
+            return window.alert(`"Success", the number was ${userInput}! Attempts: ${attempts}`);
+        } 
+        attempts++;
+        userInput = window.prompt("Nope, sorry! Try again!");
+    }
+    if (userInput == randomNum) {
+            return window.alert(`"Success", the number was ${userInput}! Attempts: ${attempts}`);
+        } else {
+            return window.alert(`Sorry, you failed to guess the number in three attempts. The number was ${randomNum}!`);
+    }
+}
+
+// Exercise solution v2
+document.getElementById('Guess2').onclick = function guess2() {
+    
+  let max = 10;
+  let randomNum = Math.floor(Math.random() * Math.floor(max) + 1);
+  console.log(randomNum);
+  let attempts = 0;
+  var userInput = window.prompt("Guess a number between 1 and 10 (v2)", "")
 
 
-// function getRandomInt(max) {
-//   let x = 1;  // user input
-//   let randomInt = Math.floor(Math.random() * Math.floor(max) + 1); // "+ 1" to avoid "0"
-//   if (x == randomInt) {
-//       return console.log("acertou");
-//   } else if (x != randomInt) {
-//       console.log("errou");
-//   }
-// }
-// getRandomInt(11); // expected output: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 or 10
+  while (attempts != 3) {
+      if (randomNum == userInput) {
+               return window.alert(`"Success", the number was ${userInput}! Attempts: ${attempts} (v2)`);
+      } else if (randomNum != userInput) {
+          userInput = window.prompt("Nope, sorry! Try again! (v2)");
+          attempts++;
+      }
+  }
+
+  window.alert(`Sorry, you failed to guess the number in three attempts. The number was ${randomNum} (v2)!`);
+}
