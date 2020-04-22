@@ -94,7 +94,7 @@ document.getElementById('Guess2').onclick = function guess2() {
   let max = 10;
   let randomNum = Math.floor(Math.random() * Math.floor(max) + 1);
   console.log(randomNum);
-  let attempts = 0;
+  let attempts = 1;
   var userInput = window.prompt("Guess a number between 1 and 10 (v2)", "")
 
 
