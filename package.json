@@ -1,7 +1,7 @@
 {
   "name": "dciscsstemplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://sass-lang.com/   https://sass-lang.com/guide   https://github.com/sass/sass-site",
   "main": "index.js",
   "scripts": {
     "start": "run-p watch watch:styles",
@@ -10,8 +10,8 @@
     "build:styles": "sass src/scss:src/styles",
     "watch": "live-server src",
     "watch:styles": "sass src/scss:src/styles --watch",
-    "clean": "rm -rf dist",
-    "clean:styles": "rm -rf src/styles",
+    "clean": "rmdir -r dist",
+    "clean:styles": "rmdir -r src/styles",
     "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
     "publish": "gh-pages -d dist"
   },
