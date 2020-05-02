@@ -72,8 +72,8 @@ moreClass.style.width = "70%";
 
 function newContent() {
     document.open();
-    document.write("<h1>Cool this is me 😎</h1><div>");
-    document.write("Hi I am Hadi");
-    document.write("<a href=".20200421/20200421.html">return</a>");
+    document.write("<h1>Cool, this is me 😎</h1><div>");
+    document.write("Hi, I am Hadi");
+    document.write(`<br><br><a href="../20200421/20200421.html">Return</a>`);
     document.close();
 }
