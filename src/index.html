@@ -3,13 +3,13 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="./styles/style.css">
-    
+
     <title>Project Template</title>
 
 </head>
@@ -17,41 +17,43 @@
 <!-- only for didactic objective (is better to use CSS/Sass) -->
 <style>
     .background {
-        background-color:            blueviolet;
-        width:                              700px;
-        padding:                             15px;
-        color:                            white;
-        font-weight:                         bold;
-        border-radius:                        5px;
+        background-color: blueviolet;
+        width: 700px;
+        padding: 15px;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
     }
+
     .span2 {
-        background-color:                violet;
-        padding:                              5px;
-        border-radius:                        5px;
-        height:                              12px;
-        font-size:                           12px;
-        vertical-align:                    middle;
+        background-color: violet;
+        padding: 5px;
+        border-radius: 5px;
+        height: 12px;
+        font-size: 12px;
+        vertical-align: middle;
         font-family: Arial, Helvetica, sans-serif;
     }
 </style>
 
 <!-- ** to fix ".nav-bar" ** -->
 <!-- <div class="nav-bar"> -->
-    <head>
-        <div class="head-pages">
-            <div class="head-pages-current-page" id="Home"><a href="../../index.html">HOME</a></div>
-        </div>
-        <div class="head-pages">
-            <div class="head-pages-transparent" id="Home"><a href="../../index.html"></a></div>
-            <div><a href="./html/20200415/20200415.html">15.04.2020</a></div>
-            <div><a href="./html/20200416/20200416.html">16.04.2020</a></div>
-            <div><a href="./html/20200420/20200420.html">20.04.2020</a></div>
-            <div><a href="./html/20200421/20200421.html">21.04.2020</a></div>
-            <div><a href="./html/20200422/20200422.html">22.04.2020</a></div>
-            <div><a href="./html/20200423/20200423.html">23.04.2020</a></div>
-            <!-- <div><a href="./html/tests/test.html">Tests</a></div> -->
-        </div>
-    </head>
+
+<head>
+    <div class="head-pages">
+        <div class="head-pages-current-page" id="Home"><a href="../../index.html">HOME</a></div>
+    </div>
+    <div class="head-pages">
+        <div class="head-pages-transparent" id="Home"><a href="#"></a></div>
+        <div><a href="./html/20200415/20200415.html">15.04.2020</a></div>
+        <div><a href="./html/20200416/20200416.html">16.04.2020</a></div>
+        <div><a href="./html/20200420/20200420.html">20.04.2020</a></div>
+        <div><a href="./html/20200421/20200421.html">21.04.2020</a></div>
+        <div><a href="./html/20200422/20200422.html">22.04.2020</a></div>
+        <div><a href="./html/20200423/20200423.html">23.04.2020</a></div>
+        <!-- <div><a href="./html/tests/test.html">Tests</a></div> -->
+    </div>
+</head>
 <!-- </div> -->
 
 <body class="body-home">
@@ -62,10 +64,10 @@
             <img src="./img/logo_github_transp.png" width="50px">
         </a>
     </h1>
-    
+
     <h2>
-        An HTML and CSS 
-        <a href="https://en.wikipedia.org/wiki/Boilerplate_code" target="_blank"><b>boilerplate code</b></a> 
+        An HTML and CSS
+        <a href="https://en.wikipedia.org/wiki/Boilerplate_code" target="_blank"><b>boilerplate code</b></a>
         with built-in <a href="https://sass-lang.com/" target="_blank"><b>Sass</b></a> support
     </h2>
 
@@ -89,7 +91,7 @@
 
     <!-- Setup -->
     <h3 id="Setup">
-        Setup 
+        Setup
         <span class="span2"><a href="#"><b>HOME</b></a></span>
     </h3>
 
@@ -100,7 +102,8 @@
         <br>
 
         <!-- 2. -->
-        <li>create <a href="https://daringfireball.net/projects/markdown/" target="_blank"><b>README.md</b></a> file</li>
+        <li>create <a href="https://daringfireball.net/projects/markdown/" target="_blank"><b>README.md</b></a> file
+        </li>
         <br>
 
         <!-- 3. -->
@@ -108,53 +111,56 @@
             <br>
             <br>
             <div class="background">
-            <code>npm init</code>
+                <code>npm init</code>
             </div>
             <br>
-            (after the command above the <a href="https://www.json.org/" target="_blank"><code><b>package.json</b></code></a> file will be created)
+            (after the command above the <a href="https://www.json.org/"
+                target="_blank"><code><b>package.json</b></code></a> file will be created)
         </li>
         <br>
 
-<!-- 4. -->
-<li>edit <code><b>package.json</b></code> file
-<br>
-<br>
-<!-- 4.1. -->
-<ol>4.1. add your project's name:</ol>
-<br>
-<div class="background">
-<pre>
+        <!-- 4. -->
+        <li>edit <code><b>package.json</b></code> file
+            <br>
+            <br>
+            <!-- 4.1. -->
+            <ol>4.1. add your project's name:</ol>
+            <br>
+            <div class="background">
+                <pre>
 {
     "name": "[project name]",
     ...
     "author": "[your name]"
 }
 </pre>
-</div>
-<br>
-<!-- 4.2. -->
-<ol>4.2. remove this line (inside "scripts"):</ol>
-<br>
-<div class="background">
-<pre>
+            </div>
+            <br>
+            <!-- 4.2. -->
+            <ol>4.2. remove this line (inside "scripts"):</ol>
+            <br>
+            <div class="background">
+                <pre>
 {
     ...
     "test": "echo \"Error: no test specified\" && exit 1"
     ...
 }
 </pre>
-</div>
-<br>
-<br>
+            </div>
+            <br>
+            <br>
 
-<!-- on Linux. -->
-<ol><h1 class="logo">on Linux&nbsp;<img src="./img/logo_linux.png" width="35px"></h1></ol>
-<br>
-<!-- 4.3. -->
-<ol>4.3. add these lines inside "scripts":</ol>
-<br>
-<div class="background">
-<pre>
+            <!-- on Linux. -->
+            <ol>
+                <h1 class="logo">on Linux&nbsp;<img src="./img/logo_linux.png" width="35px"></h1>
+            </ol>
+            <br>
+            <!-- 4.3. -->
+            <ol>4.3. add these lines inside "scripts":</ol>
+            <br>
+            <div class="background">
+                <pre>
 "scripts": {
     "start": "run-p watch watch:styles",
     "build": "run-s clean clean:styles build:styles copy",
@@ -168,13 +174,13 @@
     "publish": "gh-pages -d dist"
 },
 </pre>
-</div>
-<br>
-<!-- 4.4. -->
-<ol>4.4. add these lines below ""license": "ISC"":</ol>
-<br>
-<div class="background">
-<pre>
+            </div>
+            <br>
+            <!-- 4.4. -->
+            <ol>4.4. add these lines below ""license": "ISC"":</ol>
+            <br>
+            <div class="background">
+                <pre>
 "devDependencies": {
     "gh-pages": "^2.1.1",
     "live-server": "^1.2.1",
@@ -182,13 +188,13 @@
     "sass": "^1.23.0-module.beta.1"
 }
 </pre>
-</div>
-<br>
-<!-- final -->
-<ol>after the previous steps, your <code><b>package.json</b></code> will looks like this:</ol>
-<br>
-<div class="background">
-<pre>
+            </div>
+            <br>
+            <!-- final -->
+            <ol>after the previous steps, your <code><b>package.json</b></code> will looks like this:</ol>
+            <br>
+            <div class="background">
+                <pre>
 {
   "name": "template",
   "version": "1.0.0",
@@ -216,18 +222,20 @@
   }
 }
 </pre>
-</div>
+            </div>
 
-<br>
+            <br>
 
-<!-- on Windows. -->
-<ol><h1 class="logo">on Windows&nbsp;<img src="./img/windows_logo.png" width="35px"></h1></ol>
-<br>
-<!-- 4.3.1. -->
-<ol>4.3.1. add these lines inside "scripts":</ol>
-<br>
-<div class="background">
-<pre>
+            <!-- on Windows. -->
+            <ol>
+                <h1 class="logo">on Windows&nbsp;<img src="./img/windows_logo.png" width="35px"></h1>
+            </ol>
+            <br>
+            <!-- 4.3.1. -->
+            <ol>4.3.1. add these lines inside "scripts":</ol>
+            <br>
+            <div class="background">
+                <pre>
 "scripts": {
     "start": "run-p watch watch:styles",
     "build": "run-s clean clean:styles build:styles copy",
@@ -241,20 +249,21 @@
     "publish": "gh-pages -d dist"
 },
 </pre>
-</div>
-<br>
-<!-- 4.3.2. -->
-<ol>4.3.2. create the 
-    <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/xcopy" target="_black"><b>excludelist.txt</b></a> 
-    file inside the template folder and add to this file the files/folders to be excluded.
-</ol>
-<br>
-<br>
-<!-- 4.4. -->
-<ol>4.4. add these lines below ""license": "ISC"":</ol>
-<br>
-<div class="background">
-<pre>
+            </div>
+            <br>
+            <!-- 4.3.2. -->
+            <ol>4.3.2. create the
+                <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/xcopy"
+                    target="_black"><b>excludelist.txt</b></a>
+                file inside the template folder and add to this file the files/folders to be excluded.
+            </ol>
+            <br>
+            <br>
+            <!-- 4.4. -->
+            <ol>4.4. add these lines below ""license": "ISC"":</ol>
+            <br>
+            <div class="background">
+                <pre>
 "devDependencies": {
     "gh-pages": "^2.1.1",
     "live-server": "^1.2.1",
@@ -263,13 +272,13 @@
     "del-cli": "0.2.1"
 }
 </pre>
-</div>
-<br>
-<!-- final -->
-<ol>after the previous steps, your <code><b>package.json</b></code> will looks like this:</ol>
-<br>
-<div class="background">
-<pre>
+            </div>
+            <br>
+            <!-- final -->
+            <ol>after the previous steps, your <code><b>package.json</b></code> will looks like this:</ol>
+            <br>
+            <div class="background">
+                <pre>
 {
   "name": "template",
   "version": "1.0.0",
@@ -298,24 +307,25 @@
   }
 }
 </pre>
-</div>
+            </div>
 
-<!-- </li> -->
+            <!-- </li> -->
 
-<br>
+            <br>
 
-        <!-- 5. -->
-        <li>create <a href="https://git-scm.com/docs/gitignore" target="_black"><b>.gitignore</b></a> file and skip this folders
+            <!-- 5. -->
+        <li>create <a href="https://git-scm.com/docs/gitignore" target="_black"><b>.gitignore</b></a> file and skip this
+            folders
             <br>
             <br>
             <div class="background">
-            <code>dist/</code>
-            <br>
-            <br>
-            <code>node_modules</code>
-            <br>
-            <br>
-            <code>src/styles</code>
+                <code>dist/</code>
+                <br>
+                <br>
+                <code>node_modules</code>
+                <br>
+                <br>
+                <code>src/styles</code>
             </div>
         </li>
         <br>
@@ -329,14 +339,14 @@
             <br>
             <br>
             <div class="background">
-            <code>img</code>
-            <br>
-            <br>
-            <code>scripts</code>
-            <br>
-            <br>
-            <code>scss</code>
-            <br>
+                <code>img</code>
+                <br>
+                <br>
+                <code>scripts</code>
+                <br>
+                <br>
+                <code>scss</code>
+                <br>
             </div>
         </li>
         <br>
@@ -345,12 +355,12 @@
         <li>create a <b>index.html</b> inside <b>src</b> folder</li>
         <br>
 
-<!-- 9. -->
-<li>edit the <b>index.html</b> file (./src/index.html) to add your project's name
-<br>
-<br>
-<div class="background">
-<pre>
+        <!-- 9. -->
+        <li>edit the <b>index.html</b> file (./src/index.html) to add your project's name
+            <br>
+            <br>
+            <div class="background">
+                <pre>
 ...
 &lt;head&gt;
   ...
@@ -358,36 +368,37 @@
 &lt;/head&gt;
 ...
 </pre>
-</div>
-</li>
-<br>
+            </div>
+        </li>
+        <br>
 
         <!-- 10. -->
         <li>create a <b>style.scss</b> inside <b>scss</b> folder</li>
         <br>
 
         <!-- 11. -->
-        <li>start a new git repository and make an initial commit. this will make sure that you can work on your project with git
+        <li>start a new git repository and make an initial commit. this will make sure that you can work on your project
+            with git
             <br>
             <br>
             <div class="background">
-            <code>git init</code>
-            <br>
-            <code>git add .</code>
-            <br>
-            <code>git commit -m "Initial commit"</code>
-            <br>
-            <code>git push</code>
-            <br>
+                <code>git init</code>
+                <br>
+                <code>git add .</code>
+                <br>
+                <code>git commit -m "Initial commit"</code>
+                <br>
+                <code>git push</code>
+                <br>
             </div>
             <br>
             or (some git versions)
             <br>
             <br>
             <div class="background">
-            <code>git init</code>
-            <br>
-            <code>git add . && git commit -m "Initial commit" && git push</code>
+                <code>git init</code>
+                <br>
+                <code>git add . && git commit -m "Initial commit" && git push</code>
             </div>
             <br>
         </li>
@@ -398,7 +409,7 @@
             <br>
             <br>
             <div class="background">
-            <code>npm install</code>
+                <code>npm install</code>
             </div>
             <br>
         </li>
@@ -409,47 +420,50 @@
 
     <!-- Useful Commands -->
     <h3 id="Useful_Commands">
-        Useful Commands 
+        Useful Commands
         <span class="span2"><a href="#"><b>HOME</b></a></span>
     </h3>
 
     <h4>Development</h4>
 
-    <p>Run <a href="https://www.npmjs.com/package/live-server" target="_blank"><b>live-server</b></a> 
+    <p>Run <a href="https://www.npmjs.com/package/live-server" target="_blank"><b>live-server</b></a>
         and <a href="https://sass-lang.com/" target="_blank"><b>Sass</b></a> in watch mode and start coding!</p>
 
     <ol>
-    <div class="background">
-    <code>npm start</code>
-    </div>
+        <div class="background">
+            <code>npm start</code>
+        </div>
     </ol>
-    
+
     <h4>Production</h4>
 
-    <p><a href="https://en.wikipedia.org/wiki/Source-to-source_compiler" target="_blank"><b>Transpile</b></a> <b>Sass</b> 
+    <p><a href="https://en.wikipedia.org/wiki/Source-to-source_compiler" target="_blank"><b>Transpile</b></a>
+        <b>Sass</b>
         and copy relevant files from <b>src</b> to <b>dist</b> to prepare your website for <b>deployment</b>.</p>
 
     <ol>
-    <div class="background">
-    <code>npm run build</code>
-    </div>
+        <div class="background">
+            <code>npm run build</code>
+        </div>
     </ol>
-    
+
     <h4>Deploy to GitHub Pages</h4>
 
     <p>
-        Deploy your code to 
-        <a href="https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site" target="_blank"><b>Github Pages</b></a>: 
+        Deploy your code to
+        <a href="https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site"
+            target="_blank"><b>Github Pages</b></a>:
         this script creates a <b>gh-pages</b> branch and publishes the <b>dist</b> folder.
         <br>
         <br>
-        For this to work, make sure you already have a remote repository on <a href="https://github.com" target="_blank"><b>GitHub</b></a>.
+        For this to work, make sure you already have a remote repository on <a href="https://github.com"
+            target="_blank"><b>GitHub</b></a>.
     </p>
 
     <ol>
-    <div class="background">
-    <code>npm run deploy</code>
-    </div>
+        <div class="background">
+            <code>npm run deploy</code>
+        </div>
     </ol>
 
     <br>
@@ -457,15 +471,15 @@
 
     <!-- Project Structure -->
     <h3 id="Project_Structure">
-        Project Structure 
+        Project Structure
         <span class="span2"><a href="#"><b>HOME</b></a></span>
     </h3>
 
     <p>Any project created with this boilerplate will follow the structure below:</p>
 
     <ol>
-    <div class="background">
-<pre>
+        <div class="background">
+            <pre>
 Project
 |   README.md
 |   package.json
@@ -479,20 +493,20 @@ Project
 |   └───img
 └───dist
 </pre>
-    </div>
+        </div>
     </ol>
 
     <h4 class="h4"><span>README.md</span></h4>
 
     <p>
-        The <b>README.md</b> should contain a brief description of your project. 
+        The <b>README.md</b> should contain a brief description of your project.
         Feel free to delete this guide or rename it to add your own description.
     </p>
 
     <h4 class="h4"><span>package.json</span> <b>&</b> <span>package-lock.json</span></h4>
 
     <p>
-        These files contain various information about you, your project and the project dependencies, 
+        These files contain various information about you, your project and the project dependencies,
         as well as useful scripts to help you with the development process.
         <br>
         Please do not edit these files for the time being, except where you are asked to.
@@ -501,18 +515,19 @@ Project
     <h4 class="h4"><span>src</span> <b>&</b> <span>index.html</span></h4>
 
     <p>
-        The <b>src</b> folder contains any file you would want to add to your website before any processing is done to it. 
+        The <b>src</b> folder contains any file you would want to add to your website before any processing is done to
+        it.
         This is the main folder you will be working in.
         <br>
         <br>
-        <b>index.html</b> is the main page for your website which you will be working on. 
+        <b>index.html</b> is the main page for your website which you will be working on.
         Feel free to add any new html pages you create directly in the <b>src</b> folder.
     </p>
 
     <h4 class="h4"><span>scripts</span></h4>
 
     <p>
-        The <b>scripts</b> folder will contain any <b>js</b> files you will add to your website. 
+        The <b>scripts</b> folder will contain any <b>js</b> files you will add to your website.
         Eventually <b>index.js</b> is the <i><b>main script</b></i> file of your project.
         <br>
         Feel free to use this file to add any JavaScript that you want to experiment with.
@@ -521,18 +536,19 @@ Project
     <h4 class="h4"><span>scss</span> <b>&</b> <span>style.scss</span></h4>
 
     <p>
-        The <b>scss</b> folder will contain any <b>scss</b> or <b>css</b> files (depending on your preference). 
+        The <b>scss</b> folder will contain any <b>scss</b> or <b>css</b> files (depending on your preference).
         In order to include additional styles in your project, you must import them to <b>style.scss</b>.
         <br>
         <br>
-        <b>style.scss</b> is your style <i><b>entry point</b></i>. Any other <b>scss</b> or <b>css</b> imported to this file can be used, 
+        <b>style.scss</b> is your style <i><b>entry point</b></i>. Any other <b>scss</b> or <b>css</b> imported to this
+        file can be used,
         and any styles written directly to this file will be applied.
     </p>
 
     <h4 class="h4"><span>img</span> <b>&</b> <span>fonts</span></h4>
 
     <p>
-        For the sake of organization and good project structure practices, 
+        For the sake of organization and good project structure practices,
         please use these folders in order to keep your images and fonts respectively.
     </p>
 
@@ -544,51 +560,52 @@ Project
 
     <ol>
         <div class="background">
-        <code>npm run build</code>
+            <code>npm run build</code>
         </div>
     </ol>
 
     <p>
-        This folder will contain your built project, ready to be deployed online. 
-        It is excluded from <b>git</b> tracking since it is not customary to include compiled code in a development project.
+        This folder will contain your built project, ready to be deployed online.
+        It is excluded from <b>git</b> tracking since it is not customary to include compiled code in a development
+        project.
     </p>
 
     <br>
 
     <!-- Bootstrap -->
     <h3 id="Bootstrap">
-        <a href="https://getbootstrap.com/docs/4.4/getting-started/download/" target="_blank">Bootstrap</a> 
+        <a href="https://getbootstrap.com/docs/4.4/getting-started/download/" target="_blank">Bootstrap</a>
         <span class="span2"><a href="#"><b>HOME</b></a></span>
     </h3>
 
-        <ol>
-            <!-- 1. -->
-            <li>run on <a href="https://en.wikipedia.org/wiki/Terminal_emulator" target="_blank"><b>Terminal</b></a>
-                <br>
-                <br>
-                <div class="background">
+    <ol>
+        <!-- 1. -->
+        <li>run on <a href="https://en.wikipedia.org/wiki/Terminal_emulator" target="_blank"><b>Terminal</b></a>
+            <br>
+            <br>
+            <div class="background">
                 <code>npm install bootstrap</code>
-                </div>
-                <br>
-            </li>
-            <!-- 2. -->
-            <li>add this line inside <b>"style.scss"</b> (or <b>"main.scss"</b>):
-                <br>
-                <br>
-                <div class="background">
-<pre>
+            </div>
+            <br>
+        </li>
+        <!-- 2. -->
+        <li>add this line inside <b>"style.scss"</b> (or <b>"main.scss"</b>):
+            <br>
+            <br>
+            <div class="background">
+                <pre>
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 </pre>
-                </div>
-                <br>
-                (after adding the line above and save the file, the
-                <a href="https://getbootstrap.com/docs/4.4/getting-started/download/" target="_blank">Bootstrap</a> 
-                CSS lines will be added at 
-                <b>style.css</b> )
-                <br>
-            </li>
-        </ol>
-        <br>
+            </div>
+            <br>
+            (after adding the line above and save the file, the
+            <a href="https://getbootstrap.com/docs/4.4/getting-started/download/" target="_blank">Bootstrap</a>
+            CSS lines will be added at
+            <b>style.css</b> )
+            <br>
+        </li>
+    </ol>
+    <br>
 
     <br>
 
