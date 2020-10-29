@@ -2,7 +2,7 @@
 
 ** Windows "push.ps1" **
 
-To execute "push.sh" on Windows PowerShell:
+To execute "push.ps1" on Windows PowerShell:
 ./push.ps1
 
 
