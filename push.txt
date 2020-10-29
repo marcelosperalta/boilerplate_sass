@@ -1,5 +1,3 @@
-
-
 ** Windows "push.ps1" **
 
 To execute "push.ps1" on Windows PowerShell:
