@@ -3,65 +3,20 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="./styles/style.css">
 
-    <title>Project Template</title>
-
+    <title>Sass</title>
 </head>
-
-<!-- only for didactic objective (is better to use CSS/Sass) -->
-<style>
-    .background {
-        background-color: blueviolet;
-        width: 700px;
-        padding: 15px;
-        color: white;
-        font-weight: bold;
-        border-radius: 5px;
-    }
-
-    .span2 {
-        background-color: violet;
-        padding: 5px;
-        border-radius: 5px;
-        height: 12px;
-        font-size: 12px;
-        vertical-align: middle;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-</style>
-
-<!-- ** to fix ".nav-bar" ** -->
-<!-- <div class="nav-bar"> -->
-
-<head>
-    <div class="head-pages">
-        <div class="head-pages-current-page" id="Home"><a href="#">HOME</a></div>
-    </div>
-    <div class="head-pages">
-        <div class="head-pages-transparent" id="Home"><a href="#"></a></div>
-        <div><a href="./html/20200415/20200415.html">15.04.2020</a></div>
-        <div><a href="./html/20200416/20200416.html">16.04.2020</a></div>
-        <div><a href="./html/20200420/20200420.html">20.04.2020</a></div>
-        <div><a href="./html/20200421/20200421.html">21.04.2020</a></div>
-        <div><a href="./html/20200422/20200422.html">22.04.2020</a></div>
-        <div><a href="./html/20200423/20200423.html">23.04.2020</a></div>
-        <!-- <div><a href="./html/tests/test.html">Tests</a></div> -->
-    </div>
-</head>
-<!-- </div> -->
 
 <body class="body-home">
-
     <h1 class="h1-home">
         <a href="https://github.com/marcelosperalta/dciScssTemplate">
-            Project Template
-            <img src="./img/logo_github_transp.png" width="50px">
+            Boilerplate Sass
+            <img class="github" src="./img/logo_github.png" width="50px">
         </a>
     </h1>
 
@@ -110,7 +65,7 @@
         <li>run on <a href="https://en.wikipedia.org/wiki/Terminal_emulator" target="_blank"><b>Terminal</b></a>
             <br>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <code>npm init</code>
             </div>
             <br>
@@ -126,7 +81,7 @@
             <!-- 4.1. -->
             <ol>4.1. add your project's name:</ol>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <pre>
 {
     "name": "[project name]",
@@ -139,7 +94,7 @@
             <!-- 4.2. -->
             <ol>4.2. remove this line (inside "scripts"):</ol>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <pre>
 {
     ...
@@ -159,7 +114,7 @@
             <!-- 4.3. -->
             <ol>4.3. add these lines inside "scripts":</ol>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <pre>
 "scripts": {
     "start": "run-p watch watch:styles",
@@ -179,7 +134,7 @@
             <!-- 4.4. -->
             <ol>4.4. add these lines below ""license": "ISC"":</ol>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <pre>
 "devDependencies": {
     "gh-pages": "^2.1.1",
@@ -193,7 +148,7 @@
             <!-- final -->
             <ol>after the previous steps, your <code><b>package.json</b></code> will looks like this:</ol>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <pre>
 {
   "name": "template",
@@ -234,7 +189,7 @@
             <!-- 4.3.1. -->
             <ol>4.3.1. add these lines inside "scripts":</ol>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <pre>
 "scripts": {
     "start": "run-p watch watch:styles",
@@ -262,7 +217,7 @@
             <!-- 4.4. -->
             <ol>4.4. add these lines below ""license": "ISC"":</ol>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <pre>
 "devDependencies": {
     "gh-pages": "^2.1.1",
@@ -277,7 +232,7 @@
             <!-- final -->
             <ol>after the previous steps, your <code><b>package.json</b></code> will looks like this:</ol>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <pre>
 {
   "name": "template",
@@ -318,7 +273,7 @@
             folders
             <br>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <code>dist/</code>
                 <br>
                 <br>
@@ -338,7 +293,7 @@
         <li>create the folders below inside <b>src</b> folder
             <br>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <code>img</code>
                 <br>
                 <br>
@@ -359,7 +314,7 @@
         <li>edit the <b>index.html</b> file (./src/index.html) to add your project's name
             <br>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <pre>
 ...
 &lt;head&gt;
@@ -381,7 +336,7 @@
             with git
             <br>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <code>git init</code>
                 <br>
                 <code>git add .</code>
@@ -395,7 +350,7 @@
             or (some git versions)
             <br>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <code>git init</code>
                 <br>
                 <code>git add . && git commit -m "Initial commit" && git push</code>
@@ -408,7 +363,7 @@
         <li>install the <code><b>package.json</b></code> dependencies
             <br>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <code>npm install</code>
             </div>
             <br>
@@ -430,7 +385,7 @@
         and <a href="https://sass-lang.com/" target="_blank"><b>Sass</b></a> in watch mode and start coding!</p>
 
     <ol>
-        <div class="background">
+        <div class="code-background">
             <code>npm start</code>
         </div>
     </ol>
@@ -442,7 +397,7 @@
         and copy relevant files from <b>src</b> to <b>dist</b> to prepare your website for <b>deployment</b>.</p>
 
     <ol>
-        <div class="background">
+        <div class="code-background">
             <code>npm run build</code>
         </div>
     </ol>
@@ -461,7 +416,7 @@
     </p>
 
     <ol>
-        <div class="background">
+        <div class="code-background">
             <code>npm run deploy</code>
         </div>
     </ol>
@@ -478,7 +433,7 @@
     <p>Any project created with this boilerplate will follow the structure below:</p>
 
     <ol>
-        <div class="background">
+        <div class="code-background">
             <pre>
 Project
 |   README.md
@@ -559,7 +514,7 @@ Project
     </p>
 
     <ol>
-        <div class="background">
+        <div class="code-background">
             <code>npm run build</code>
         </div>
     </ol>
@@ -583,7 +538,7 @@ Project
         <li>run on <a href="https://en.wikipedia.org/wiki/Terminal_emulator" target="_blank"><b>Terminal</b></a>
             <br>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <code>npm install bootstrap</code>
             </div>
             <br>
@@ -592,7 +547,7 @@ Project
         <li>add this line inside <b>"style.scss"</b> (or <b>"main.scss"</b>):
             <br>
             <br>
-            <div class="background">
+            <div class="code-background">
                 <pre>
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 </pre>
@@ -615,26 +570,10 @@ Project
             <span><a href="#Setup"><b>Setup</b></a></span>
             <span><a href="#Useful_Commands"><b>Useful Commands</b></a></span>
             <span><a href="#Project_Structure"><b>Project Structure</b></a></span>
-            <span><a href="#Bootstrap"><b>Bootstrap</b></a></span>
-        </div>
-        <br>
-        <div>
-            <span><a href="./html/20200415/20200415.html"><b>15.04.2020</b></a></span>
-            <span><a href="./html/20200416/20200416.html"><b>16.04.2020</b></a></span>
-            <span><a href="./html/20200420/20200420.html"><b>20.04.2020</b></a></span>
-            <span><a href="./html/20200421/20200421.html"><b>21.04.2020</b></a></span>
-            <span><a href="./html/20200422/20200422.html"><b>22.04.2020</b></a></span>
-            <span><a href="./html/20200423/20200423.html"><b>23.04.2020</b></a></span>
         </div>
     </footer>
 
     <br>
-
-    <!-- to do -->
-    <!-- to top -->
-    <!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
-    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
-
 </body>
 
 </html>
