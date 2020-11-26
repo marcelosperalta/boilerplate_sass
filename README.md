@@ -55,16 +55,16 @@ https://github.com/fenneclab/hugo-bin/commit/71c224ca8bad5ef7df836a42a6b2524162f
 **xcopy**  
 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/xcopy  
 
-## Project Template
+## Boilerplate Sass
 
-1. create a folder for the Project Template;
-2. create a "README.md" file inside "Project Template" folder;
+1. create a folder for the Boilerplate Sass;
+2. create a "README.md" file inside "Boilerplate Sass" folder;
 3. open "Terminal";
-4. open the "Project Template" folder;
+4. open the "Boilerplate Sass" folder;
 5. type "npm init";
 6. press "enter" until the end (the file "package.json" will be created);
-7. create a ".gitignore" file inside "Project Template" folder;
-8. create a "src" folder inside "Project Template" folder;
+7. create a ".gitignore" file inside "Boilerplate Sass" folder;
+8. create a "src" folder inside "Boilerplate Sass" folder;
 9. create a "img" folder inside "src" folder;
 10. create a "scripts" folder inside "src" folder;
 11. create a "scss" folder inside "src" folder;
@@ -80,7 +80,7 @@ https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/
 21. initiate the new repository and push the files ("git init", "git add .", "git commit -m "..."", git remote add origin "...", "git push origin master);
 22. type "npm run deploy" (if ran OK, the last line will be "Published").
 
-## Project Template GitHub Page
+## Boilerplate Sass GitHub Page
 
 https://marcelosperalta.github.io/boilerplate_sass/
 
