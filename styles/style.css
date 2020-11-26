@@ -58,43 +58,4 @@ body .code-background {
   border-radius: 5px;
 }
 
-.nav-15042020 li {
-  list-style: none;
-}
-.nav-15042020 a {
-  color: tomato;
-}
-.nav-15042020 a:hover {
-  background-color: black;
-}
-
-.container-16042020 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 99%;
-  background-color: pink;
-  font-family: arial;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.text-center-16042020 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 99%;
-  font-family: arial;
-  font-size: 9rem;
-  font-weight: normal;
-}
-
-.image-20200420 {
-  border: 1px solid black;
-  border-radius: 5px;
-  margin: 5px;
-}
-
 /*# sourceMappingURL=style.css.map */
