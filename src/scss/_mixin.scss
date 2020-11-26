@@ -12,23 +12,3 @@
   font-size: $f-size;
   font-weight: $f-weight;
 }
-.container-16042020 {
-  @include flex-forever;
-  background-color: pink;
-  @include font-setup(arial, 3rem, bold);
-}
-.text-center-16042020 {
-  @include flex-forever;
-  @include font-setup(arial, 9rem, normal);
-}
-
-// class 20.04.2020
-// 20200420.html
-@mixin image {
-  border: 1px solid black;
-  border-radius:        5px;
-  margin:               5px;
-}
-.image-20200420 {
-  @include image()
-}

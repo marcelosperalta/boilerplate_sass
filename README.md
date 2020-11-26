@@ -80,7 +80,7 @@ https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/
 21. initiate the new repository and push the files ("git init", "git add .", "git commit -m "..."", git remote add origin "...", "git push origin master);
 22. type "npm run deploy" (if ran OK, the last line will be "Published").
 
-## Boilerplate Sass GitHub Page
+## Boilerplate Sass on GitHub Pages
 
 https://marcelosperalta.github.io/boilerplate_sass/
 
